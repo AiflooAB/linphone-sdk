@@ -20,8 +20,8 @@
 #
 ############################################################################
 
-find_package(PythonInterp)
-if(NOT PYTHONINTERP_FOUND)
+find_package (Python COMPONENTS Interpreter Development)
+if(NOT Python_FOUND)
 	message(FATAL_ERROR "Could not find python!")
 endif()
 
